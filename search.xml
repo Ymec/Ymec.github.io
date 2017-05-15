@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[如何快速、免费架起翻墙的梯子]]></title>
+      <url>/2017/05/07/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E3%80%81%E5%85%8D%E8%B4%B9%E6%9E%B6%E8%B5%B7%E7%BF%BB%E5%A2%99%E7%9A%84%E6%A2%AF%E5%AD%90/</url>
+      <content type="html"><![CDATA[<p><br><br>&emsp;&emsp;随着互联网的高速的发展，然而有很多外网不能访问，因为有：<a href="https://en.wikipedia.org/wiki/Great_Firewall" target="_blank" rel="external">Great Firewall</a>    </p>
+<p><center><img src="http://i2.muimg.com/1949/b996afb4c48a9691.png" alt="404"></center><br>&emsp;&emsp;记得中国的第一封电子邮件的内容是：<strong>“Across the Great Wall we can reach every corner in the world.(越过长城，走向世界)”</strong>。现在确实是这样，肉身不能翻墙，只能越过长城（防火墙），走向世界。<br>先来看看GFW的简单介绍（<strong>图片来源网络，如有侵权，告知作者</strong>）：</p>
+<p><center><img src="http://i2.muimg.com/1949/3c03f548594ce43d.jpg" alt="GFW"></center><br>&emsp;&emsp;可以看出，GFW通过大致四个方式来多重限制访问外网，这里先介绍如何突破第一重限制——DNS（Domain Name System）封锁。所谓的DNS封锁，就是浏览网页时输入的网址，也就是域名，通常会在DNS服务器的作用下将域名解析成IP地址，IP地址是在整个网络上数据传输的标准地址。一般的方法是购买VPN，优点是稳定，缺点是需要收费。然而，有一种迂回办法：修改系统的hosts 文件。<a href="http://baike.baidu.com/link?url=fxT6e_v-Y3h6OXbX16On7l5ecT_R0RBRRVfKt4PFAqQwwF2u07MlACbBU_FAAVTJh4lrsOilYvOn1jJYuRn8Ga" target="_blank" rel="external">hosts</a> 是用来提高解析效率，优先级高于DNS服务器，即访问网页时首先系统会检测hosts 文件中是否有这个地址映射关系，如果有，就直接使用这个地址映射，如果没有，就会向上层的DNS服务器请求这个映射关系。那么问题来了，如何获得免费的hosts文件呢？</p>
+<p>这里，感谢GitHub上一个项目：<a href="https://github.com/racaljk/hosts" target="_blank" rel="external">racaljk/hosts</a></p>
+<p>在这个项目里，会实时更新可用的 <a href="https://github.com/racaljk/hosts/blob/master/hosts" target="_blank" rel="external">hosts文件</a>  </p>
+<p>现在，需要做的是把这个hosts网页里的所有的地址映射复制下来，然后进入到C:\Windows\System32\drivers\etc:</p>
+<p><img src="http://i2.muimg.com/1949/16ec27870e90556f.jpg" alt="path"></p>
+<p>打开hosts文件，先删除hosts文件原有的内容，然后粘贴刚刚复制的内容，重启浏览器，就可以reach every corner in the world.</p>
+<p><img src="http://i4.buimg.com/1949/dbc4acadc1818bd2.jpg" alt="google"></p>
+<p>这种是手动复制粘贴的方法，同时，这个项目提供了小程序可以直接自动修改hosts文件：<a href="https://github.com/HostsTools/Windows/releases" target="_blank" rel="external">HostsTools/Windows</a> 下载后，解压运行，即可。</p>
+<p><strong>特别声明：</strong></p>
+<ul>
+<li>以上内容只是一些分享，不涉及任何政治敏感</li>
+<li>以上方法针对windows OS，不同系统的hosts文件位置：<a href="https://github.com/racaljk/hosts/wiki/%E5%90%84%E5%B9%B3%E5%8F%B0-hosts-%E6%96%87%E4%BB%B6%E4%BD%8D%E7%BD%AE" target="_blank" rel="external">racaljk/hosts</a> 根据自己的系统做出相应的修改即可</li>
+<li>这个方法是快捷、免费的，缺点是需要定期（几天左右）重新更新hosts文件，还有是不能看油管的视频，但是资料查找、网络社交等是没有问题的</li>
+</ul>
+<p><strong>最后，我希望能帮助到需要帮助的人。</strong></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 网络 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 网络 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[知乎用户头像简单爬虫]]></title>
+      <url>/2017/05/02/%E7%9F%A5%E4%B9%8E%E7%94%A8%E6%88%B7%E5%A4%B4%E5%83%8F%E7%AE%80%E5%8D%95%E7%88%AC%E8%99%AB/</url>
+      <content type="html"><![CDATA[<p><br><br>&emsp;&emsp; 写作缘由：<a href="https://zhuanlan.zhihu.com/p/20597170" target="_blank" rel="external">带逛传万世 因有我参与 - 知乎专栏</a>    </p>
+<p>&emsp;&emsp; 首先感谢 <a href="https://www.zhihu.com/people/grapeot" target="_blank" rel="external">grapeot</a> 提供的<a href="http://lab.grapeot.me/zhihu/autoface" target="_blank" rel="external">实验数据</a></p>
+<p><strong>说明</strong>    </p>
+<ul>
+<li><p>本文基于autoface网站，通过Java爬虫将网站中的知乎用户头像爬下并本地化存储    </p>
+</li>
+<li><p>使用Jsoup解析网页    </p>
+</li>
+<li><p>使用单线程爬取    </p>
+</li>
+<li><p>头像保存在项目目录下的zhihupics文件夹    </p>
+</li>
+</ul>
+<p><strong>思路</strong>    </p>
+<p>这是一个很简单的测试案例，通过解析<a href="http://lab.grapeot.me/zhihu/autoface" target="_blank" rel="external">autoface</a>网站的源文件    </p>
+<p><img src="http://i1.piimg.com/1949/be61428959a20951.jpg" alt="autoface_source">    </p>
+<p>每一行对应一个用户的知乎个人首页网址    </p>
+<p><img src="http://i1.piimg.com/567571/c6215bdaae976e35.jpg" alt="sample">   </p>
+<p>通过Jsoup遍历所有的地址节点，进入到每一个用户的知乎个人主页，观察源码     </p>
+<p><img src="http://i1.piimg.com/567571/649c1fdd8eaa57cb.jpg" alt="zhihu_user_profile">   </p>
+<p>找到用户头像的网络存储的位置，遍历所有用户的头像的地址，并使用I/O流将图片下载到本地，并将头像顺序编号    </p>
+<p><img src="http://i1.piimg.com/567571/a106e9705dfa3ca9.jpg" alt="images_file">    </p>
+<p>保存本地的预览图如下：</p>
+<p><img src="http://i4.buimg.com/567571/5437acd243f1523b.jpg" alt="1"><br><img src="http://i1.piimg.com/1949/95f899d4353ee508.jpg" alt="2"><br><img src="http://i1.piimg.com/1949/0d7c3dbbca118205.jpg" alt="3"><br><img src="http://i1.piimg.com/1949/6b78cf68f8caa3aa.jpg" alt="4"><br><img src="http://i1.piimg.com/1949/fbc93b2730dbbb82.jpg" alt="5"><br><img src="http://i1.piimg.com/1949/0ab306809f098a96.jpg" alt="6"><br><img src="http://i1.piimg.com/1949/dcd800fcc0dc72ea.jpg" alt="7">     </p>
+<p><strong>Code</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div></pre></td><td class="code"><pre><div class="line"> java</div><div class="line"></div><div class="line">import java.io.BufferedReader;</div><div class="line">import java.io.File;</div><div class="line">import java.io.FileOutputStream;</div><div class="line">import java.io.InputStream;</div><div class="line">import java.io.InputStreamReader;</div><div class="line">import java.net.HttpURLConnection;</div><div class="line">import java.net.URL;</div><div class="line">import java.util.HashMap;</div><div class="line">import java.util.Iterator;</div><div class="line">import java.util.Map;</div><div class="line">import java.util.Map.Entry;</div><div class="line"></div><div class="line">import org.jsoup.Jsoup;</div><div class="line">import org.jsoup.nodes.Document;</div><div class="line">import org.jsoup.select.Elements;</div><div class="line"></div><div class="line">/**</div><div class="line"> * @author RunDouble</div><div class="line"> * </div><div class="line"> */</div><div class="line">public class PictureInZhihu &#123;</div><div class="line">	private InputStream is;</div><div class="line">	private BufferedReader bufferedReader;</div><div class="line">	private String tempString = &quot;&quot;;</div><div class="line">	private StringBuffer webStringBuffer;</div><div class="line">	private String webString = &quot;&quot;;</div><div class="line"></div><div class="line">	public String getWbebString(String webUrl) &#123;</div><div class="line">		try &#123;</div><div class="line">			if (webUrl != null) &#123;</div><div class="line">				URL url = new URL(webUrl);</div><div class="line">				HttpURLConnection connection = (HttpURLConnection)url.openConnection();</div><div class="line">				connection.getContent();</div><div class="line">				is = connection.getInputStream();</div><div class="line">				bufferedReader = new BufferedReader(new InputStreamReader(is));</div><div class="line">				webStringBuffer = new StringBuffer(&quot;&quot;);</div><div class="line">				while ((tempString = bufferedReader.readLine()) != null) &#123;</div><div class="line">					webStringBuffer.append(tempString);</div><div class="line">				&#125;</div><div class="line">				webString = webStringBuffer.toString();</div><div class="line">			&#125;</div><div class="line">		&#125; catch (Exception e) &#123;</div><div class="line">			e.printStackTrace();</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		return webString;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	public static HashMap&lt;String, String&gt; getUsersUrlAndprofileUrl(String webUrl) &#123;</div><div class="line">		Document document;</div><div class="line">		String addressLinkHref;</div><div class="line">		String profileLinkSrc = &quot;&quot;;</div><div class="line">		HashMap&lt;String, String&gt; urlWithProfile = new HashMap&lt;&gt;();</div><div class="line">		try &#123;</div><div class="line">			document = Jsoup.connect(webUrl).get();</div><div class="line">			Elements links = document.select(&quot;a[href]&quot;);</div><div class="line">			for (int i = 0; i &lt; links.size(); i++) &#123;</div><div class="line">				addressLinkHref = links.get(i).attr(&quot;href&quot;);</div><div class="line">				try &#123;</div><div class="line">					document = Jsoup.connect(addressLinkHref).get();</div><div class="line">				&#125; catch (Exception e) &#123;</div><div class="line">					i++;</div><div class="line">					continue;</div><div class="line">				&#125;</div><div class="line">				Elements jpgs = document.select(&quot;img[src$=.jpg]&quot;);</div><div class="line">				if (jpgs.size() != 0) &#123;</div><div class="line">					profileLinkSrc = jpgs.get(0).attr(&quot;src&quot;);</div><div class="line">				&#125;</div><div class="line">				System.out.println(addressLinkHref);</div><div class="line">				System.out.println(profileLinkSrc + &quot;\n\n&quot;);</div><div class="line">				if (!profileLinkSrc.equals(&quot;&quot;)&amp;&amp; profileLinkSrc.contains(&quot;http&quot;)) &#123;</div><div class="line">					urlWithProfile.put(addressLinkHref, profileLinkSrc);</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line"></div><div class="line">		&#125; catch (Exception e) &#123;</div><div class="line">			e.printStackTrace();</div><div class="line"></div><div class="line">		&#125;</div><div class="line">		return urlWithProfile;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	public static void picturePersistence(HashMap&lt;String, String&gt; info) &#123;</div><div class="line">		Iterator&lt;Entry&lt;String, String&gt;&gt; it = info.entrySet().iterator();</div><div class="line">		int index = 1;</div><div class="line">		while (it.hasNext()) &#123;</div><div class="line">			Map.Entry entry = (Map.Entry) it.next();</div><div class="line">			String tempPicUrl = entry.getValue().toString();</div><div class="line">			try &#123;</div><div class="line">				URL url = new URL(tempPicUrl);</div><div class="line">				HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();</div><div class="line">				httpURLConnection.setReadTimeout(50000);</div><div class="line">				InputStream inputStream = httpURLConnection.getInputStream();</div><div class="line">				String newImageName = String.valueOf(index) + &quot;.jpg&quot;;</div><div class="line">				File file = new File(&quot;zhihupics&quot;);</div><div class="line">				if (!file.exists()) &#123;</div><div class="line">					file.mkdir();</div><div class="line">				&#125;</div><div class="line"></div><div class="line">				FileOutputStream fos = new FileOutputStream(file.getPath()+ &quot;\\&quot; + newImageName);</div><div class="line">				byte[] buffer = new byte[1024];</div><div class="line">				int length;</div><div class="line">				while ((length = inputStream.read(buffer)) &gt; 0) &#123;</div><div class="line">					fos.write(buffer, 0, length);</div><div class="line">				&#125;</div><div class="line">				index++;</div><div class="line">			&#125; catch (Exception e) &#123;</div><div class="line">				continue;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	/*</div><div class="line">	 * just a test</div><div class="line">	 */</div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		double start = System.currentTimeMillis();</div><div class="line">		PictureInZhihu.picturePersistence(PictureInZhihu.getUsersUrlAndprofileUrl(&quot;http://lab.grapeot.me/zhihu/autoface&quot;));</div><div class="line">		double end = System.currentTimeMillis();</div><div class="line">		double totalTime = ((end - start) / 1000) / 60;</div><div class="line">		System.out.println(&quot;Total time:&quot; + totalTime + &quot;miniutes.&quot;);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>总结</strong><br>&emsp;&emsp; 这是最基本的爬虫，没有用到多线程，也没有用到模拟登录，更没有用到IP代理。重在乐趣。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 编程 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 爬虫 </tag>
+            
+            <tag> java </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[特朗普税改]]></title>
+      <url>/2017/05/01/%E7%89%B9%E6%9C%97%E6%99%AE%E7%A8%8E%E6%94%B9/</url>
+      <content type="html"><![CDATA[<p><br><br>&emsp;&emsp;以下是 <a href="http://weibo.com/u/1875034341?topnav=1&amp;wvr=6&amp;topsug=1" target="_blank" rel="external">华尔街见闻APP</a> 微博关于特朗普税改计划内容图：  </p>
+<p><img src="http://i4.buimg.com/567571/c015d180439837e9.jpg" alt="Trump Tax Plan"></p>
+<p>&emsp;&emsp;可以看出税改计划主要集中于减少企业税率、降低个人税负、 留存海外的利润一次性征税 三个方面。从目前来看白宫想要力争在今年通过税改法案，大幅度的减税，尤其是给富人减税、加重政府财政赤字（据美国国会税务联合委员会的测算：如果实施税改计划，将公司税下调至15%，意味着美国政府在未来10年内，将失去2万亿美元财政收入），而任何加大政府赤字的法案都会面临重重阻力，使得国会能否通过此法案还是一个巨大的未知数。    </p>
+<p>&emsp;&emsp;在Trump上台百日之际，推出税改法案，确实是大刀阔斧，想通过企业大幅度的减税来增加企业利润振兴美国实体经济和兑现大选承诺，但Trump又想加强基础建设，这无疑需要更多的钱去投入，一方面减少政府财政收入，另一方面增加政府的基建投入这是一对矛盾关系。    </p>
+<p>&emsp;&emsp;其次，新一轮税改可能带动他国的税改。人民日报也刊文表示，<a href="http://news.qq.com/a/20170428/001723.htm" target="_blank" rel="external">美国减税计划可挑起税务战</a> 。<br><img src="http://i2.muimg.com/567571/b268978856a21fdd.jpg" alt="人民日报"></p>
+<p>&emsp;&emsp;总结特朗普政府的税改计划：big changes,big unknowns.</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 经济 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 经济 </tag>
+            
+            <tag> 美国税改 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[如果有一天，苹果和微信只能选一个，你会选哪一个？]]></title>
+      <url>/2017/04/25/%E5%A6%82%E6%9E%9C%E6%9C%89%E4%B8%80%E5%A4%A9%EF%BC%8C%E8%8B%B9%E6%9E%9C%E5%92%8C%E5%BE%AE%E4%BF%A1%E5%8F%AA%E8%83%BD%E9%80%89%E4%B8%80%E4%B8%AA%EF%BC%8C%E4%BD%A0%E4%BC%9A%E9%80%89%E5%93%AA%E4%B8%80%E4%B8%AA%EF%BC%9F/</url>
+      <content type="html"><![CDATA[<p><br><br>&emsp;&emsp;问题来源：<a href="https://www.zhihu.com/question/58721652/answer/158515342" target="_blank" rel="external"><strong>如何看待 iOS 版微信公众平台赞赏功能因苹果相关政策被腾讯关闭？</strong></a>   </p>
+<p>&emsp;&emsp;苹果的iOS是系统层，是直接对手机硬件进行操作，腾讯的iOS版微信是构建于系统之上的应用层，通俗的说苹果提供API供微信这样的应用开发者使用。作为用户，购买苹果手机已经支付了相当可观的费用，作为应用开发者，每年缴纳了99刀的开发者账号费用，也就是说苹果公司在手机硬件本身与软件开发方面都有大量的收入来源，这也是闭源系统应得利益。而现在， 苹果新条款3.1.1中指出，App 不得包含指引客户使用非 IAP（iOS应用内付费） 机制进行购买的按钮、外部链接或其他行动号召用语。最直白的解释是：老子（苹果）不满足已有的系统层的利益，老子要插手介入应用层，需要在应用层分一勺羹。     </p>
+<p>&emsp;&emsp;微信众多用户数量是由于微信应用本身对用户具有极大的吸引力，以及其自身优越性决定，而与微信在什么系统上是无关的。也就是说，微信公众平台的知识赞赏功能是与公众平台的信息发布者，信息阅读者，和微信是直接相关的，而与承载微信的iOS系统是间接相关的。通过这种系统垄断的优势，强迫应用开发者与应用使用者付出更高的代价是不合理的。     </p>
+<p>&emsp;&emsp;手机终端生态体系包含硬件厂商、手机厂商、运营商、开发者等组成， 手机厂商可以肆意掠夺开发者的利益，那么，是不是可以理解运营商也可以染指开发者利益？要知道，在中国运营商的垄断的地位不知道比苹果高到哪里去。最终两个大佬的互撕，受伤的是内容作者。     </p>
+<p>&emsp;&emsp; 回到一开始的问题：<strong>如果有一天，苹果和微信只能选一个，你会选哪一个？</strong>    </p>
+<p>&emsp;&emsp;很多人内心的想法是：去比较、去思量能否接受被诟病（至少有人这么认为）的安卓系统。我的答案是iPhone不是必须的，但微信是刚需。 iOS 版微信公众平台赞赏功能因苹果相关政策被关闭最本质的问题在于：除去苹果系统，也只剩下安卓一家独大，暴露的是系统垄断后带来的贪婪。这一点，苹果应该向某软学习，很多时候做人比技术更重要，对企业也是这样。    </p>
+]]></content>
+      
+        <categories>
+            
+            <category> 科技 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 科技 </tag>
+            
+            <tag> iPhone </tag>
+            
+            <tag> WeChat </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello,world.]]></title>
+      <url>/2017/04/24/Hello,world/</url>
+      <content type="html"><![CDATA[<p><div align="center">This article is just to test my blog,welcome.</div><br><img src="http://i2.muimg.com/567571/a6066749430a4a4e.gif" alt="Hello,world."></p>
+]]></content>
+      
+        
+    </entry>
+    
+  
+  
+</search>
