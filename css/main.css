@@ -1814,7 +1814,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb636;
+  background: #ff3bff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2987,6 +2987,20 @@ pre .javascript .function {
   .post-body {
     text-align: justify;
   }
+}
+.footer {
+  background: none;
+  font-size: 16px;
+}
+.footer-inner {
+  font-family: 'Comic Sans MS', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+body {
+  background: url("http://i1.piimg.com/588926/08019909b090e9e7.jpg");
+  background-attachment: fixed;
 }
 code {
   color: #fc6423;
